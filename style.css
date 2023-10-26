@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Inter:wght@100;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer .footer-links h2, .hero .slogan h2, .hero .slogan h1, #exterior h1, #interior h1 {
+  font-family: "inter";
+  color: #252a34;
+}
+
+.hero .slogan p, #exterior p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+#cars-area button, .hero .slogan button, #exterior button, #interior button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  color: white;
+  background-color: transparent;
+  border-radius: 0;
+  border: 1px solid white;
+  transition: backround-color 0.4s;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #eaeaea;
+  font-family: "poppins";
+}
+
+img {
+  mix-blend-mode: darken;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: #252a34;
+  border-right: 1px solid gray;
+}
+header nav a:last-child {
+  border-right: none;
+}
+header nav a:hover {
+  color: crimson;
+  transition: 0.5s;
+}
+header #nav-left a {
+  padding: 0 20px;
+  border-right: 1px solid gray;
+}
+header #nav-left a:last-child {
+  border-right: none;
+}
+header #nav-right {
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  header #nav-right {
+    display: none;
+  }
+}
+header .opener {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -130px;
+  background-color: rgb(239, 233, 233);
+  box-shadow: 2px 10px 10px rgb(240, 115, 84);
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+header .opener a {
+  text-decoration: none;
+}
+header .menu {
+  width: 40px;
+  display: none;
+}
+@media (max-width: 800px) {
+  header .menu {
+    display: block;
+  }
+}
+header .menu:hover + .opener {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+}
+.hero .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 800px) {
+  .hero .slogan {
+    gap: 20px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .hero .slogan {
+    max-width: 400px;
+  }
+}
+.hero .slogan h1 {
+  font-size: 40px;
+}
+@media (max-width: 800px) {
+  .hero .slogan h1 {
+    text-align: center;
+  }
+}
+.hero .slogan p {
+  margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  .hero .slogan p {
+    text-align: center;
+  }
+}
+.hero .slogan img {
+  margin-top: 30px;
+  width: 200px;
+}
+.hero .slogan button {
+  background-color: rgb(235, 15, 59);
+}
+.hero .slogan button:hover {
+  background-color: rgb(172, 3, 37);
+  transition: all 0.4s;
+}
+
+.imagesi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.imagesi .imagesi-banner {
+  width: 800px;
+  margin-top: 80px;
+}
+@media (min-width: 800px) and (max-width: 1400px) {
+  .imagesi .imagesi-banner {
+    max-width: 800px;
+  }
+}
+.imagesi .imagesi-track {
+  max-width: 400px;
+}
+.imagesi p {
+  max-width: 400px;
+  text-align: center;
+}
+
+#interior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), black), url("/imagesss/interior.jpg");
+}
+
+#exterior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url(/imagesss/exterior-4.jpg);
+}
+#exterior p {
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  #exterior p {
+    font-size: 15px;
+  }
+}
+
+#cars-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+#cars-area .cars {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #cars-area .cars {
+    flex-direction: column;
+  }
+}
+#cars-area .cars img {
+  width: 300px;
+}
+#cars-area .cars h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+#cars-area button {
+  background-color: aqua;
+  margin-top: 30px;
+}
+#cars-area button:hover {
+  background-color: rgb(0, 180, 180);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+footer img {
+  width: 60px;
+  height: 90px;
+  mix-blend-mode: unset;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+@media (max-width: 800px) {
+  footer .footer-links {
+    align-items: center;
+  }
+}
+footer .footer-links h2 {
+  color: white;
+}
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

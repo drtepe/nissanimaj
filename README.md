@@ -4,8 +4,8 @@ Nissan gtr için yapılan web sayfası
 
 <h2> Kullanılan teknolojiler </h2>
         
-        HTML ve SCSS ile aniamsyon teknolojileri
+        HTML ve SCSS ile animasyon teknolojileri
 
-<h2> Ekran gifi </h2>
+<h2> Ekran Gifi </h2>
 
 ![](ekran.gif)
